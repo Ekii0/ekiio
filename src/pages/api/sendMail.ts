@@ -6,7 +6,7 @@ export default async function handler(
 ) {
   try {
     const response = await fetch(
-      `${process.env.NEXT_PUBLIC_BACKEND_URL}:${process.env.NEXT_PUBLIC_BACKEND_PORT}/sendmail`,
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}/sendmail`,
       {
         method: "POST",
         headers: {
