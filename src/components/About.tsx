@@ -16,7 +16,7 @@ const About = ({ pageInfo }: Props) => {
       <motion.img
         src={urlFor(pageInfo?.profilePic).url()}
         alt="about_picture"
-        className="-mb-28 md:mb-0 flex-shrink-0 w-40 h-40 object-cover rounded-full md:rounded-xl md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+        className="hidden sm:block -mb-28 md:mb-0 flex-shrink-0 w-40 h-40 object-cover rounded-full md:rounded-xl md:w-64 md:h-80 xl:w-[500px] xl:h-[600px]"
         initial={{
           x: -200,
           opacity: 0,
