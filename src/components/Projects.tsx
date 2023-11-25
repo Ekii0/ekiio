@@ -14,17 +14,17 @@ const Projects = ({ projects }: Props) => {
         Projects
       </h3>
 
-      <div className="w-full flex overflow-x-scroll snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/25 scrollbar-thumb-[#F7AB0A]/80 h-4/5">
+      <div className="w-full flex items-center overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/25 scrollbar-thumb-[#F7AB0A]/80 h-4/5">
         {projects?.map((project, i) => (
           <motion.div
             key={project._id}
             initial={{ opacity: 0 }}
             transition={{ duration: 1.5 }}
             whileInView={{ opacity: 1 }}
-            className="h-[600px] md:h-[700px] w-screen flex-shrink-0 snap-center flex flex-col space-y-5 justify-center items-center p-20 md:p-44"
+            className="h-4/5 sm:h-[600px] md:h-[700px] w-screen flex-shrink-0 snap-center flex flex-col space-y-5 justify-center items-center py-20 px-10 md:p-36"
           >
             <motion.img
-              className="hidden sm:inline-block sm:h-80 object-cover object-center rounded-lg"
+              className="h-40 sm:h-80 object-cover object-center rounded-lg"
               initial={{ y: -300, opacity: 0 }}
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ const Projects = ({ projects }: Props) => {
               alt=""
             />
 
-            <div className="flex flex-col px-0 md:px-10 max-w-6xl space-y-5 sm:h-4/5">
+            <div className="flex flex-col px-0 md:px-5 max-w-4xl space-y-5 h-4/5">
               <h4 className="text-2xl md:text-4xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
                   Case Study {i + 1} of {projects.length}:
